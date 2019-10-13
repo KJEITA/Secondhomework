@@ -26,10 +26,11 @@ class FragmentActivity : AppCompatActivity() {
         /*button.setOnClickListener(View.OnClickListener {
             replaceFragment()
         })
+    }*/
     }
-    fun replaceFragment(){
+     fun replaceFragment(view :View){
         val secondFragment = SecondFragment()
         fragmentManager.beginTransaction().add(R.id.fragment, SecondFragment()).addToBackStack("thirdFragment")
             .commit()
-    }*/
-}}
+    }
+}
