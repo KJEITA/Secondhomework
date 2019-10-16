@@ -57,6 +57,7 @@ class FragmentActivity : AppCompatActivity() {
             args.putString("argText", s)
             fragment.arguments = args
 
+            //TODO  Не переживай, у тебя вполне приличный код)
             fragment.setTextView()
             // Простите за кривой код :/ Пока разбирался в теме, нарушил все возможные правила
         }
