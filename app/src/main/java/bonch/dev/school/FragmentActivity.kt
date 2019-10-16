@@ -29,6 +29,9 @@ class FragmentActivity : AppCompatActivity() {
     }*/
     }
      fun replaceFragment(view :View){
+         //TODO Ты создал один фрагмент, а менеджеру присвоил новый
+         // (Если вдруг не очень хорошо с ООП — ты в менеджере вызвал конструктор и создал новый объект, а не передал предыдущий).
+         // Или передавай в менеджер secondActivity, или создавай фрагмент в менеджере, но убери неиспользуемый secondFragment
         val secondFragment = SecondFragment()
         fragmentManager.beginTransaction().add(R.id.fragment, SecondFragment()).addToBackStack("thirdFragment")
             .commit()
