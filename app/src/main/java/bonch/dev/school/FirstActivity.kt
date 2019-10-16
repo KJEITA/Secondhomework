@@ -9,6 +9,18 @@ import android.widget.TextView
 
 class FirstActivity : AppCompatActivity() {
 
+    //TODO Я не буду ничего менять сама, только оставлю комментарии, чтобы ты сам мог себя поправить.
+
+    //TODO Обязательно удаляй из манифеста удалённые активности.
+    // Например в этой ветке у тебя в манифесте как ошибка выделена MainActivity, ведь её больше нет в проекте.
+    // Так же фильтр стартовой активности должен быть только у одной активности.
+    // Иначе в некоторых случаях приложение может вылетать от подобной неопределённости.
+
+    //TODO У тебя неплохо со стилем кода, но делай форматирование.
+    // Сделай ctrl + alt + L и посмотри, как среда всё отформаттирует.
+    // Между методами нужно делать отступы, кое-где не лишними будут пробелы.
+
+
     private lateinit var indicatorButton:Button
     private lateinit var counterButton:Button
     private lateinit var textField:TextView
@@ -24,8 +36,10 @@ class FirstActivity : AppCompatActivity() {
         setOnClickListener()
 
         if(savedInstanceState != null)
-             reWrite(savedInstanceState)
+
+            reWrite(savedInstanceState)
     }
+    //TODO Имя метода всегда должно быть глаголом, не существительным. В данном случае или init, или initialize
     private fun initialization(){
         indicatorButton = findViewById<Button>(R.id.indicator_button)
         counterButton = findViewById<Button>(R.id.counter_button)

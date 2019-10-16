@@ -14,6 +14,9 @@ class SecondActivity : AppCompatActivity() {
 
         textView = findViewById<TextView>(R.id.text_view)
 
+
+        //TODO Везде, где ты только один раз присваиваешь переменной значение, объявляй их как val.
+        // Пока что это кажется избыточным, но на деле это делает написание сложного кода проще.
         var ind =  intent.getBooleanExtra ("Indicator",false)
         var count =  intent.getIntExtra ("Counts",0)
         var text =  intent.getStringExtra ("Text")
