@@ -21,7 +21,7 @@ class FragmentActivity : AppCompatActivity() {
         fragmentManager.beginTransaction().add(R.id.fragment, firstFragment)
             .commit()
 
-        button = findViewById<Button>(R.id.next_activity_button)
+            //button = findViewById<Button>(R.id.next_activity_button)
 
         /*button.setOnClickListener(View.OnClickListener {
             replaceFragment()
