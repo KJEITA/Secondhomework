@@ -21,6 +21,9 @@ class DialogFragment : DialogFragment() {
         button_ok = v.findViewById(R.id.ok_button)
 
         button_ok.setOnClickListener {
+            //TODO с тостами для краткости можно писать прямо в ряд:
+            // Toast.makeText(...).show()
+            // Даже без объявление. Это так, приятная мелочь)
             val toast = Toast.makeText(
                 context,
                 "OK", Toast.LENGTH_SHORT
