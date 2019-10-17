@@ -24,19 +24,11 @@ class DialogFragment : DialogFragment() {
             //TODO с тостами для краткости можно писать прямо в ряд:
             // Toast.makeText(...).show()
             // Даже без объявление. Это так, приятная мелочь)
-            val toast = Toast.makeText(
-                context,
-                "OK", Toast.LENGTH_SHORT
-            )
-            toast.show()
+            Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show()
             dismiss()
         }
         button_cancel.setOnClickListener {
-            val toast = Toast.makeText(
-                context,
-                "Cancel", Toast.LENGTH_SHORT
-            )
-            toast.show()
+           Toast.makeText(context, "Cancel", Toast.LENGTH_SHORT).show()
             dismiss()
         }
         return v
